@@ -1,0 +1,98 @@
+Technological Institute of the Philippines
+Quezon City
+
+CS 404 - EXPERT SYSTEMS
+Second Semester S.Y. 2025-2026
+
+CONCEPT PROPOSAL
+
+(1) Proponents
+
+Name
+
+
+Roles 
+(Project Leader, Knowledge Engineer, System Developer / Programmer, Data Analyst / Researcher, Documentation and Presentation Specialist)
+
+1. Gantang, Rem Gabriel M.
+2. Gison, Reuven James U.
+3. Guillermo, Alvin J.
+
+
+
+Data Analyst / Researcher
+Knowledge Engineer, System Developer
+Project Leader, Programmer
+(2) Title (Provide a concise and research-oriented title that reflects the focus of the study and the machine learning model or approach being applied.)
+
+ReadAssist: A Rule-Based Expert System for Automated Phil-IRI Profiling 
+and Targeted Reading Intervention
+
+
+(3) Background of the Study (The background of the study should begin with a brief introduction of the domain or industry problem to establish the context and relevance of the research. This includes explaining the nature of the challenge, the datasets involved, and the real-world issues or trends that highlight the need for a solution. It should also provide a clear rationale for why machine learning methods are appropriate in addressing the problem, emphasizing their potential advantages over traditional approaches. Finally, a brief literature snapshot should be included to reference related studies and demonstrate how the proposed work builds upon or differs from existing research.)
+
+   In the Philippine public school system, the Philippine Informal Reading Inventory (Phil-IRI) is a mandated assessment tool used to gauge the reading proficiency of Grades 3 to 6 students. A major administrative and pedagogical challenge occurs during the evaluation of the Group Screening Test (GST) and the subsequent individualized reading assessments. Teachers handling large classes of 40 to 50 students must manually tally scores, compute adaptive starting passage levels, calculate reading speed and comprehension percentages, and, most importantly, diagnose specific reading miscues (e.g., mispronunciation, omission, substitution, word-by-word reading) to formulate specialized remedial lesson plans. This process is extremely time-consuming and prone to human error, especially when students read slowly and require repeated testing until they reach the Instructional or Independent level.
+
+    Addressing this challenge requires a computational approach that guarantees accuracy, transparency, and strict adherence to established educational policies. While data-driven machine learning models are widely used in educational technology, they function probabilistically and often lack the deterministic explainability required for formal pedagogical assessments. Conversely, a Rule-Based Expert System is highly appropriate for this domain because the Phil-IRI assessment relies on explicit, standardized quantitative formulas and qualitative pedagogical rubrics governed by DepEd Order No. 14, s. 2018. By codifying the exact diagnostic decision trees used by reading specialists—linking specific reading errors to targeted interventions outlined in the Phil-IRI Handbook on Reading Intervention—this proposed expert system guarantees 100% adherence to DepEd guidelines. It builds upon existing digital reading trackers by advancing beyond simple speed calculation into automated, explainable pedagogical diagnostics.
+
+
+(4) Project Objectives (This section should state the overarching research goal, followed by specific objectives. These include identifying and preprocessing relevant datasets, implementing and comparing selected machine learning models or algorithms, evaluating model performance using appropriate metrics such as accuracy, F1-score, or RMSE, and proposing an optimized or hybrid solution if applicable.)
+
+General Objective:
+The primary goal of this research is to design and develop a rule-based expert system that automates the Phil-IRI screening, profiling, and targeted intervention processes for public school teachers.
+
+Specific Objectives
+This project specifically aims:
+To digitize the Phil-IRI Group Screening Test (GST) cut-off rubrics to automatically classify students as either exempted or requiring further reading assessment.
+To develop a forward-chaining inference engine that accurately computes the appropriate starting reading passage level based on the student’s specific GST deficit.
+To formulate a diagnostic recommendation module that analyzes inputted reading miscues, reading rate, and comprehension scores to accurately classify the student's reading profile (Independent, Instructional, or Frustration).
+To prescribe targeted, DepEd-aligned pedagogical interventions (e.g., Marungko approach, phonics drills) tailored exactly to the root cause of the student's diagnosed reading difficulty.
+To validate the system’s diagnostic logic, level-placement accuracy, and intervention relevance using institutional testing datasets evaluated by a licensed DepEd Public School Teacher.
+
+
+(5) Expected Output (The expected output of the project includes a trained and validated machine learning model, both baseline and improved versions, along with documentation of the methodology and evaluation results. It should also feature a comparative analysis of the techniques used and culminate in a final technical paper or report that meets academic standards. If appropriate, the proponents may also develop a prototype or system demo to showcase the application of the model.)
+
+    The expected output of the project is a fully functional Rule-Based Expert System prototype tailored for DepEd teachers, which integrates four core modules into a single, seamless application. First, it features a GST Screening and Leveling Module that automates the GST evaluation and assigns adaptive starting passage levels based on the student's raw score deficits. Second, a Diagnostic Input Module provides a user interface for teachers to easily input reading time, comprehension scores, and specific behavioral reading miscues. Behind the scenes, an Expert Intervention Engine serves as the core inference engine, utilizing IF-THEN rules to map these reading symptoms to their root cognitive barriers. Finally, the system includes a Recommendation and Explanation Dashboard that outputs the official reading profile and specific pedagogical action plans, complete with an explanation facility detailing exactly how the conclusion was reached.
+
+
+(6) Significance of the Study (The significance of the study highlights its academic and practical contributions. Academically, it should demonstrate how the research advances knowledge in machine learning applications, algorithm comparison, or methodological innovation. Practically, it should outline the potential for adoption in real-world contexts such as healthcare, education, finance, or manufacturing. This section should also identify potential beneficiaries, such as the research community, industry partners, or policymakers, and explain how they may use the study’s results.)
+
+Advancement in Machine Learning and AI Studies: Academically, this research advances the broader study of machine learning and artificial intelligence by providing a critical comparative baseline. It demonstrates how deterministic, rule-based expert systems can outperform probabilistic machine learning models in highly regulated educational environments by guaranteeing 100% adherence to policy and providing highly traceable, transparent diagnostic logic.
+Benefits for DepEd Public School Teachers: The system benefits educators by automating the manual computation of complex Phil-IRI formulas and standardizing intervention prescriptions. By shifting the workload from manual tallying to an automated interface, it eliminates human error and significantly reduces administrative hours, allowing teachers to focus entirely on the actual instruction.
+Benefits for Struggling Primary Students: The system benefits students by ensuring they receive highly accurate, adaptive reading level placements. By instantly translating reading miscues into targeted pedagogical interventions ensures that students receive immediate, customized support tailored to their specific learning barriers, preventing further reading failure.
+
+
+(7) Target Beneficiaries (This section should specify who will directly benefit from the project, whether they are organizations, professionals, or end-users, and describe how they will gain value from the insights, models, or applications developed in the study.)
+
+DepEd Public School Teachers: Gain a digital diagnostic assistant that automates the time-consuming computation and diagnostic processes of the Phil-IRI manual.
+Struggling Primary Students (Grades 3-6): Benefit from highly accurate, adaptive reading level placements and timely, customized interventions tailored to their specific learning barriers.
+School Administrators and Principals: Can utilize the system-generated data to efficiently monitor class-wide reading proficiencies and properly allocate remedial resources.
+
+
+(8) Data Sources (This section identifies the datasets and knowledge sources that will be used to develop the expert system. These may include public datasets, institutional records, surveys, literature, or expert knowledge. Students must also identify a domain expert or person of authority who will validate the dataset and the results generated by the system.)
+
+Knowledge Base / Literature: The logic, mathematical formulas, and intervention rules for the inference engine are strictly extracted from the official Phil-IRI Manual 2018 (specifically the GST Cut-offs, Grading Rubrics, and Appendix H: Handbook on Reading Intervention).
+Datasets and Sources: To test and validate the system’s accuracy, the project will utilize a hybrid dataset composed of two parts:
+Institutional Data: This consists of anonymized historical Phil-IRI GST records and reading profiles sourced directly from a licensed public school teacher at Eulogio Rodriguez, Jr. Elementary School.
+Synthesized/New Dataset: A newly generated, synthesized dataset consisting of simulated student comprehension scores and varied reading miscues is also utilized. This dataset was created to rigorously test the system against extreme edge cases (e.g., high reading speed coupled with zero comprehension). Generating this synthetic data ensures comprehensive and robust system validation while maintaining strict compliance with the Data Privacy Act regarding sensitive minor student records.
+
+Expert Validator: A licensed DepEd Public School Teacher who regularly administers the Phil-IRI will serve as the Domain Expert. They will validate the rule base, test the dataset against the system, and provide documented feedback on the accuracy of the generated reading profiles and intervention recommendations.
+
+
+
+
+
+Approved by:							
+
+
+_______________________			           			
+
+      Dr. Karren V. de Lara
+
+
+
+
+
+
+
+

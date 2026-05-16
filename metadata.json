@@ -1,0 +1,5 @@
+{
+  "name": "ReadAssist",
+  "description": "A Rule-Based Expert System that automates the Philippine Informal Reading Inventory (Phil-IRI) for public school teachers.",
+  "requestFramePermissions": []
+}
