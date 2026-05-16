@@ -136,6 +136,7 @@ npm run dev
 
 
 The interactive interface will open at `http://localhost:3000`.
+
 4. **Start the PDF Generation Server (Optional):**
 To enable server-side high-fidelity PDF report exports, open a separate terminal window and run:
 ```bash
